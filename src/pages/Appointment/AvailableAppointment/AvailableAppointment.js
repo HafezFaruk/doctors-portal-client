@@ -44,8 +44,8 @@ const AvailableAppointment = ({ date }) => {
   const [bookingSuccess, setBookingSuccess] = useState(false);
   return (
     <Container>
-      <Typography variant="h2">
-        Available Appointment on{" "}
+      <Typography sx={{mb: 3}} variant="h4">
+        Available Appointment on
         <Typography variant="h6" style={{ color: "red" }}>
           {date.toDateString()}
         </Typography>{" "}

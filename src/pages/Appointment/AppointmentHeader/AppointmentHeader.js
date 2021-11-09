@@ -5,13 +5,13 @@ import Calendar from '../../Shared/Calendar/Calendar';
 
 const AppointmentHeader = ({date, setDate}) => {
     return (
-       <Container>
+       <Container sx={{my: 5}}>
            <Grid container spacing={2}>
                <Grid item xs={12} md={6}>
                     <Calendar date={date} setDate={setDate}></Calendar>
                </Grid>
                <Grid item xs={12} md={6}>
-                    <img style={{width: 500}} src={chair} alt="img"/>
+                    <img style={{width: 600}} src={chair} alt="img"/>
                </Grid>
            </Grid>
        </Container>
