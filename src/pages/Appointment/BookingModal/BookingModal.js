@@ -62,7 +62,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking,setBookingSucce
           handleBookingClose();
         }
       });
-    handleBookingClose();
+   
    
   };
   return (

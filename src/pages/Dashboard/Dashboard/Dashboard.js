@@ -146,14 +146,14 @@ function Dashboard(props) {
         <Switch>
           <Route exact path={path}>
             <DashboardHome></DashboardHome>
-            <MakeAdmin></MakeAdmin>
+        
           </Route>
 
-          <AdminRoute exact path={`${path}/makeAdmin`}>
+          <AdminRoute path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>
           </AdminRoute>
 
-          <AdminRoute exact path={`${path}/addDoctor`}>
+          <AdminRoute path={`${path}/addDoctor`}>
             <AddDoctor></AddDoctor>
           </AdminRoute>
         </Switch>
