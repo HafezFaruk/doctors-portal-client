@@ -18,7 +18,13 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-const BookingModal = ({ openBooking, handleBookingClose, booking,setBookingSuccess, date }) => {
+const BookingModal = ({
+  openBooking,
+  handleBookingClose,
+  booking,
+  setBookingSuccess,
+  date,
+}) => {
   const { name, time } = booking;
   const { user } = useAuth();
   const initialInfo = {
@@ -48,7 +54,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking,setBookingSucce
     console.log(appointment);
     // send to the server
 
-    fetch("http://localhost:5000/appointments", {
+    fetch("https://powerful-crag-99739.herokuapp.com/appointments", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -62,8 +68,6 @@ const BookingModal = ({ openBooking, handleBookingClose, booking,setBookingSucce
           handleBookingClose();
         }
       });
-   
-   
   };
   return (
     <>
